@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    image: apteryxlabs/camai-backend
+    env_file:
+      - .env.backend
+    ports:
+      - 8000:8000
+    restart: always #always on deploy
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge

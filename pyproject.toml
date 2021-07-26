@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "camai-backend"
+version = "0.1.2"
+description = "Camai CHC backend"
+
+[tool.poetry.dependencies]
+python = "~3.8"
+fastapi = {extras = ["all"], version = "^0.65.1"}
+uvicorn = "^0.12.2"
+regex = "^2021.4.4"
+numpy = "^1.20.2"
+pydantic = "~=1.8.1"
+motor = {extras = ["encryption"], version = "^2.4.0"}
+pymongocrypt = "^1.1.0"
+cryptography = "^3.4.7"
+pdf2image = "^1.15.1"
+pytesseract = "^0.3.7"
+PyPDF2 = "~=1.26"
+dateparser = "^1.0.0"
+phonenumbers = "^8.12.24"
+hl7 = "^0.4.2"
+python-dotenv = "^0.17.1"
+Faker = "^8.4.0"
+pytest = "^6.2.4"
+absl-py = "^0.12.0"
+tqdm = "^4.61.0"
+pandas = "^1.2.4"
+tika = "^1.24"
+PyMuPDF = "^1.18.14"
+pdfrw = "^0.4"
+XlsxWriter = "^1.4.3"
+dill = "^0.3.4"
+email-validator = "^1.1.3"
+arrow = "^1.1.0"
+openpyxl = "^3.0.7"
+beautifulsoup4 = "^4.9.3"
+lxml = "^4.6.3"
+signalwire = "^2.0.2"
+apteryx = "^1.0.2"
+pytest-asyncio = "^0.15.1"
+
+[tool.poetry.dev-dependencies]
+mongomock = "^3.23.0"
+jupyter = "^1.0.0"
+jupyterlab = "^3.0.16"
+pytest-asyncio = "^0.15.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
